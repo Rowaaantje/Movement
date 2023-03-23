@@ -26,9 +26,7 @@ namespace Movement
 		// your private fields here (add Velocity)
 		
 		Vector2 velocity;
-		
-		
-
+	
 
 		// constructor + call base constructor
 		public MovingBall() : base("resources/dvdlogo.png")
