@@ -47,7 +47,6 @@ namespace Movement
 			WrapEdges();
 			Console.WriteLine(Velocity.Length());
 		}
-
 		// your own private methods
 	}
 }

@@ -59,7 +59,6 @@ namespace Movement
 			}
 			return limited;
 		}
-
 		protected void BounceEdges()
 		{
 			float scr_width = Settings.ScreenSize.X;
