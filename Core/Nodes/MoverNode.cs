@@ -93,22 +93,34 @@ namespace Movement
 		}
 
 		protected void WrapEdges()
-		{
-			float scr_width = Settings.ScreenSize.X;
-			float scr_height = Settings.ScreenSize.Y;
-			float spr_width = TextureSize.X;
-			float spr_height = TextureSize.Y;
+        {
+            float scr_width = Settings.ScreenSize.X;
+            float scr_height = Settings.ScreenSize.Y;
+            float spr_width = TextureSize.X;
+            float spr_heigth = TextureSize.Y;
 
-			if (Position.X > scr_width - spr_width / 2)
-			{
-				Position.X = 0 + spr_width / 2;
-			}
-			if (Position.Y > scr_height - spr_height / 2)
-			{
-				Position.Y = 0 + spr_height / 2;
-			}
-			
-		}
+            // TODO implement...
+            if (Position.X > scr_width)
+            {
+                Position.X = 0;
+            }
 
+            if (Position.X < 0)
+            {
+                Position.X = scr_width;
+            }
+
+            if (Position.Y > scr_height)
+            {
+                Position.Y = 0;
+            }
+
+            if (Position.Y < 0)
+            {
+                Position.Y = scr_height;
+            }
+
+
+        }
 	}
 }

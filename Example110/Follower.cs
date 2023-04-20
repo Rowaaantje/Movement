@@ -52,4 +52,4 @@ namespace Movement
             Acceleration *= 0;
 		}
 	}
-}
+} 
