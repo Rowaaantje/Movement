@@ -49,7 +49,6 @@ namespace Movement
 		{
 			Acceleration += force / Mass;
 		}
-		
 		protected Vector2 Limit(Vector2 vec2, float max)
 		{
 			Vector2 limited = vec2;
